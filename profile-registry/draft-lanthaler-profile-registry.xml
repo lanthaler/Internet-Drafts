@@ -3,6 +3,7 @@
   <!ENTITY rfc3986 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3986.xml">
   <!ENTITY rfc5226 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5226.xml">
   <!ENTITY rfc6906 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6906.xml">
+  <!ENTITY jsonld SYSTEM "http://xml.resource.org/public/rfc/bibxml4/reference.W3C.CR-json-ld-20130910.xml">
 ]>
 
 <?xml-stylesheet type="text/xsl" href="../rfc2629.xslt" ?>
@@ -20,7 +21,7 @@
         <uri>http://www.markus-lanthaler.com/</uri>
       </address>
     </author>
-    <date day="16" month="June" year="2013" />
+    <date day="17" month="September" year="2013" />
     <keyword>profile</keyword>
     <keyword>urn</keyword>
     <abstract>
@@ -122,6 +123,49 @@
           </list>
         </t>
 
+        <t>
+          <list style="symbols">
+            <t>Profile URI: http://dublincore.org/documents/2008/08/04/dc-html/</t>
+            <t>Common Name: Dublin Core HTML meta data profile</t>
+            <t>Description: A set of conventions by which a Dublin Core
+              metadata description set can be can be represented within an
+              (X)HTML Web page using (X)HTML elements and attributes.</t>
+            <t>Specification Document: <xref target="DC-HTML" /></t>
+          </list>
+        </t>
+
+        <t><vspace blankLines="2" /></t>
+
+        <t>
+          <list style="symbols">
+            <t>Profile URI: http://www.w3.org/ns/json-ld#expanded</t>
+            <t>Common Name: Expanded JSON-LD</t>
+            <t>Description: A profile URI to request or signal expanded
+              JSON-LD document form.</t>
+            <t>Specification Document: <xref target="W3C.CR-json-ld-20130910" /></t>
+          </list>
+        </t>
+
+        <t>
+          <list style="symbols">
+            <t>Profile URI: http://www.w3.org/ns/json-ld#compacted</t>
+            <t>Common Name: Compacted JSON-LD</t>
+            <t>Description: A profile URI to request or signal compacted
+              JSON-LD document form.</t>
+            <t>Specification Document: <xref target="W3C.CR-json-ld-20130910" /></t>
+          </list>
+        </t>
+
+        <t>
+          <list style="symbols">
+            <t>Profile URI: http://www.w3.org/ns/json-ld#flattened</t>
+            <t>Common Name: Flattened JSON-LD</t>
+            <t>Description: A profile URI to request or signal flattened
+              JSON-LD document form.</t>
+            <t>Specification Document: <xref target="W3C.CR-json-ld-20130910" /></t>
+          </list>
+        </t>
+
         <?rfc subcompact="no" ?>
 
       </section>
@@ -136,6 +180,12 @@
     <section title="Change Log">
       <t>Note to RFC Editor: Please remove this section before publication.</t>
       <section title="From -02 to -03">
+        <t>
+          <list style="symbols">
+            <t>Seed registry with the profile URIs defined in
+              <xref target="DC-HTML" /> and <xref target="W3C.CR-json-ld-20130910" />.</t>
+          </list>
+        </t>
       </section>
       <section title="From -01 to -02">
         <t>
@@ -164,6 +214,27 @@
       &rfc3986;
       &rfc5226;
       &rfc6906;
+      &jsonld;
+
+      <reference anchor="DC-HTML" target="http://dublincore.org/documents/2008/08/04/dc-html/">
+        <front>
+          <title>Expressing Dublin Core metadata using HTML/XHTML meta and link elements</title>
+          <author initials="P." surname="Johnston" fullname="Pete Johnston">
+            <organization>Eduserv Foundation</organization>
+            <address>
+              <email>pete.johnston@eduserv.org.uk</email>
+            </address>
+          </author>
+          <author initials="A." surname="Powell" fullname="Andy Powell">
+            <organization>Eduserv Foundation</organization>
+            <address>
+              <email>andy.powell@eduserv.org.uk</email>
+            </address>
+          </author>
+          <date month="August" year="2008"/>
+        </front>
+        <seriesInfo name="Dublin Core Metadata Initiative" value=""/>
+      </reference>
     </references>
   </back>
 </rfc>
