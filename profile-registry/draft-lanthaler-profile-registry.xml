@@ -12,18 +12,20 @@
 <?rfc toc="yes" ?>
 <?rfc sortrefs="yes" ?>
 <?rfc symrefs="yes" ?>
-<rfc category="info" ipr="trust200902" docName="draft-lanthaler-profile-registry-03">
+<rfc category="info" ipr="trust200902" docName="draft-lanthaler-profile-registry-04">
   <front>
-    <title abbrev="Profile URI Registry">The IETF Profile URI Registry</title>
+    <title>The Profile URI Registry</title>
     <author initials="M." surname="Lanthaler" fullname="Markus Lanthaler">
       <address>
         <email>mail@markus-lanthaler.com</email>
         <uri>http://www.markus-lanthaler.com/</uri>
       </address>
     </author>
-    <date day="17" month="September" year="2013" />
+    <date day="03" month="December" year="2013" />
     <keyword>profile</keyword>
-    <keyword>urn</keyword>
+    <keyword>profiles</keyword>
+    <keyword>uri</keyword>
+    <keyword>registry</keyword>
     <abstract>
       <t>This document defines a registry for profile URIs to be used in
         specifications standardizing profiles.</t>
@@ -179,6 +181,14 @@
 
     <section title="Change Log">
       <t>Note to RFC Editor: Please remove this section before publication.</t>
+      <section title="From -03 to -04">
+        <t>
+          <list style="symbols">
+            <t>Change title from "The IETF Profile URI Registry" to just
+              "The Profile URI Registry".</t>
+          </list>
+        </t>
+      </section>
       <section title="From -02 to -03">
         <t>
           <list style="symbols">
