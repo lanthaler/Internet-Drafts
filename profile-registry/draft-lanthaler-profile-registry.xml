@@ -3,6 +3,7 @@
   <!ENTITY rfc3986 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3986.xml">
   <!ENTITY rfc5226 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5226.xml">
   <!ENTITY rfc6906 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6906.xml">
+  <!ENTITY rfc6963 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6963.xml">
 ]>
 
 <?xml-stylesheet type="text/xsl" href="../rfc2629.xslt" ?>
@@ -124,7 +125,8 @@
           <list style="symbols">
             <t>Profile URI: urn:example:profile-uri</t>
             <t>Common Name: Exemplary Profile</t>
-            <t>Description: A profile to be used in examples.</t>
+            <t>Description: A profile to be used in examples, in accordance
+              with <xref target="RFC6963" />.</t>
             <t>Specification Document: [this document]</t>
           </list>
         </t>
@@ -231,8 +233,8 @@
     </section>
 
     <section title="Acknowledgements">
-      <t>Thanks to Dave Cridland, Barry Leiba, and Nevil Brownlee for
-        valuable comments and suggestions.</t>
+      <t>Thanks to Dave Cridland, Barry Leiba, Nevil Brownlee, and
+        Peter Saint-Andre for valuable comments and suggestions.</t>
     </section>
   </middle>
   <back>
