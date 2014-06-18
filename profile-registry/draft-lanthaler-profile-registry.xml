@@ -1,18 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="US-ASCII"?>
 <!DOCTYPE rfc SYSTEM "http://xml.resource.org/authoring/rfc2629.dtd" [
-  <!ENTITY rfc3986 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3986.xml">
-  <!ENTITY rfc5226 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5226.xml">
-  <!ENTITY rfc6906 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6906.xml">
-  <!ENTITY rfc6963 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6963.xml">
+  <!ENTITY rfc3986 SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.3986.xml">
+  <!ENTITY rfc5226 SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.5226.xml">
+  <!ENTITY rfc6906 SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.6906.xml">
+  <!ENTITY rfc6963 SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.6963.xml">
 ]>
 
 <?xml-stylesheet type="text/xsl" href="../rfc2629.xslt" ?>
+
+<?rfc rfcedstyle="yes" ?>
 <?rfc compact="yes" ?>
 <?rfc subcompact="no" ?>
 <?rfc toc="yes" ?>
 <?rfc sortrefs="yes" ?>
 <?rfc symrefs="yes" ?>
-<rfc category="info" ipr="trust200902" docName="draft-lanthaler-profile-registry-05">
+
+<rfc number="7284" category="info" submissionType="independent" ipr="trust200902">
   <front>
     <title>The Profile URI Registry</title>
     <author initials="M." surname="Lanthaler" fullname="Markus Lanthaler">
@@ -21,7 +24,8 @@
         <uri>http://www.markus-lanthaler.com/</uri>
       </address>
     </author>
-    <date day="21" month="January" year="2014" />
+
+    <date month="June" year="2014" />
     <keyword>profile</keyword>
     <keyword>profiles</keyword>
     <keyword>uri</keyword>
@@ -39,7 +43,7 @@
         basic media type semantics. Profiles are identified by a URI and
         can thus be created without central coordination.</t>
 
-      <t>Similarly to media types and link relation types it is, in some cases,
+      <t>Similar to media types and link relation types, it is, in some cases,
         beneficial to centrally manage profile URIs to ensure interoperability
         and decrease the coupling between clients and servers. This allows the
         independent evolution of clients and servers as both are coupled to
@@ -56,7 +60,7 @@
         implementations is possible (see the registration template in
         <xref target="iana-considerations" />).</t>
 
-      <t>An exemplary registration request can be found in
+      <t>An example registration request can be found in
         <xref target="example-reg-req" />.</t>
     </section>
 
@@ -64,24 +68,23 @@
       <t>The following is an example registration request for the profile
         URI http://example.com/profiles/example.</t>
 
-      <t><vspace blankLines="1" /></t>
 
       <t>This is a request to IANA to please register the profile URI
-        "http://example.com/profiles/example" in the Profile URI Registry
-        according [this document].</t>
+        "http://example.com/profiles/example" in the "Profile URIs" registry
+        according [RFC7284].</t>
 
       <t>
         <list style="symbols">
           <t>Profile URI: http://example.com/profiles/example</t>
-          <t>Common Name: Exemplary Profile URI</t>
+          <t>Common Name: My Profile</t>
           <t>Description: An exemplary profile URI registration.</t>
-          <t>Specification Document: [this document]</t>
+          <t>Reference: [the relevant specification]</t>
         </list>
       </t>
     </section>
 
     <section title="IANA Considerations" anchor="iana-considerations">
-      <t>This document establishes the Profile URI registry. The
+      <t>This document establishes the "Profile URIs" registry. The
         registration procedure for new entries requires a request in
         the form of the following template and is "First Come First Served"
         per <xref target="RFC5226" />. Instructions for a registrant to
@@ -91,7 +94,7 @@
       <t>The underlying registry data (e.g., the XML file) must include
         Simplified BSD License text as described in Section 4.e
         of the Trust Legal Provisions
-        (<eref target="http://trustee.ietf.org/license-info" />).</t>
+        <xref target="TRUST" />.</t>
 
       <t>The registration template is:</t>
 
@@ -106,10 +109,10 @@
             is required and there might be no reference document. In those
             cases, be sure this description adequately documents the
             profile and is suitable for interoperable implementation.</t>
-          <t>Specification Document: Reference to the document that
+          <t>Reference: Reference to the document that
             specifies the URI, preferably including a URI that can be used
             to retrieve a copy of the document. An indication of the
-            relevant sections may also be included. This is recommended,
+            relevant sections may also be included. This is recommended
             but can be left blank if the "Description" field provides
             sufficient documentation.</t>
           <t>Notes: [optional]</t>
@@ -117,7 +120,7 @@
       </t>
 
       <section title="Initial Registry Contents">
-        <t>The Profile URI registry's initial contents are:</t>
+        <t>The "Profile URIs" registry's initial contents are:</t>
 
         <?rfc subcompact="yes" ?>
 
@@ -127,22 +130,20 @@
             <t>Common Name: Exemplary Profile</t>
             <t>Description: A profile to be used in examples, in accordance
               with <xref target="RFC6963" />.</t>
-            <t>Specification Document: [this document]</t>
+            <t>Reference: [RFC7284]</t>
           </list>
         </t>
 
         <t>
           <list style="symbols">
             <t>Profile URI: http://dublincore.org/documents/2008/08/04/dc-html/</t>
-            <t>Common Name: Dublin Core HTML meta data profile</t>
+            <t>Common Name: Dublin Core HTML metadata profile</t>
             <t>Description: A set of conventions by which a Dublin Core
               metadata description set can be can be represented within an
-              (X)HTML Web page using (X)HTML elements and attributes.</t>
-            <t>Specification Document: <xref target="DC-HTML" /></t>
+              (X)HTML web page using (X)HTML elements and attributes.</t>
+            <t>Reference: <xref target="DC-HTML" /></t>
           </list>
         </t>
-
-        <t><vspace blankLines="2" /></t>
 
         <t>
           <list style="symbols">
@@ -150,7 +151,7 @@
             <t>Common Name: Expanded JSON-LD</t>
             <t>Description: A profile URI to request or signal expanded
               JSON-LD document form.</t>
-            <t>Specification Document: <xref target="JSON-LD" /></t>
+            <t>Reference: <xref target="JSON-LD" /></t>
           </list>
         </t>
 
@@ -160,7 +161,7 @@
             <t>Common Name: Compacted JSON-LD</t>
             <t>Description: A profile URI to request or signal compacted
               JSON-LD document form.</t>
-            <t>Specification Document: <xref target="JSON-LD" /></t>
+            <t>Reference: <xref target="JSON-LD" /></t>
           </list>
         </t>
 
@@ -170,7 +171,7 @@
             <t>Common Name: Flattened JSON-LD</t>
             <t>Description: A profile URI to request or signal flattened
               JSON-LD document form.</t>
-            <t>Specification Document: <xref target="JSON-LD" /></t>
+            <t>Reference: <xref target="JSON-LD" /></t>
           </list>
         </t>
 
@@ -185,53 +186,6 @@
         in general can be found in <xref target="RFC3986" />.</t>
     </section>
 
-    <section title="Change Log">
-      <t>Note to RFC Editor: Please remove this section before publication.</t>
-      <section title="From -04 to -05">
-        <t>
-          <list style="symbols">
-            <t>Change registration process from "Specification Required" to
-              "First Come First Served".</t>
-            <t>Update JSON-LD reference.</t>
-            <t>Update acknowledgements.</t>
-          </list>
-        </t>
-      </section>
-      <section title="From -03 to -04">
-        <t>
-          <list style="symbols">
-            <t>Change title from "The IETF Profile URI Registry" to just
-              "The Profile URI Registry".</t>
-            <t>Update JSON-LD reference.</t>
-          </list>
-        </t>
-      </section>
-      <section title="From -02 to -03">
-        <t>
-          <list style="symbols">
-            <t>Seed registry with the profile URIs defined in
-              <xref target="DC-HTML" /> and <xref target="JSON-LD" />.</t>
-          </list>
-        </t>
-      </section>
-      <section title="From -01 to -02">
-        <t>
-          <list style="symbols">
-            <t>Do not establish a new IETF URN Sub-namespace anymore.</t>
-          </list>
-        </t>
-      </section>
-      <section title="From -00 to -01">
-        <t>
-          <list style="symbols">
-            <t>Use HTTP URI instead of URN in example registration request
-              to make it clearer that not only URNs can be registered.</t>
-            <t>Move security considerations to the end.</t>
-          </list>
-        </t>
-      </section>
-    </section>
-
     <section title="Acknowledgements">
       <t>Thanks to Dave Cridland, Barry Leiba, Nevil Brownlee, and
         Peter Saint-Andre for valuable comments and suggestions.</t>
@@ -242,6 +196,19 @@
       &rfc3986;
       &rfc5226;
       &rfc6906;
+      &rfc6963;
+
+      <reference anchor="TRUST" target="http://trustee.ietf.org/license-info">
+        <front>
+          <title>Trust Legal Provisions (TLP)</title>
+          <author>
+            <organization>IETF</organization>
+            <address>
+            </address>
+          </author>
+          <date />
+        </front>
+      </reference>
 
       <reference anchor="JSON-LD" target="http://www.w3.org/TR/json-ld/">
         <front>
