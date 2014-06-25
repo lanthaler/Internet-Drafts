@@ -1,6 +1,6 @@
-IETF Internet Drafts
+IETF Internet Drafts and RFCs
 ==============
 
-My IETF Internet Drafts. Currently there's only one:
+My IETF Internet Drafts and RFCs. Currently there's only one:
 
- * profile-registry: [IETF datatracker](http://datatracker.ietf.org/doc/draft-lanthaler-profile-registry/)
+ * [RFC 7284](http://tools.ietf.org/html/rfc7284)
